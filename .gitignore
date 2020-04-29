@@ -1,0 +1,9 @@
+# IntelliJ project files
+.idea
+*.iml
+
+# Generated files
+addon/sidebar/index.js
+
+# NPM
+node_modules

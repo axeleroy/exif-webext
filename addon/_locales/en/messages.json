@@ -1,0 +1,37 @@
+{
+  "extensionName": {
+    "message": "Display picture meta-data",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "An extension to display picture's metadata",
+    "description": "Extension description"
+  },
+  "sidebarName": {
+    "message": "Picture information",
+    "description": "Sidebar name"
+  },
+  "menuItemDisplayExif": {
+    "message": "Picture metadata",
+    "description": "Title of the menu item for displaying a picture's EXIF"
+  },
+  "sidebarBodyPlaceholderText": {
+    "message": "Right-click on any picture and click on \"Picture metadata\"",
+    "description": "Placeholder text when the sidebar is open without picture displayed"
+  },
+  "sidebarBodyUrl": {
+    "message": "URL:"
+  },
+  "sidebarBodyNoData": {
+    "message": "This picture does not contain meta-data",
+    "description": "Text displayed when the picture does not have meta-data"
+  },
+  "sidebarBodyMainInfoTitle": {
+    "message": "Information",
+    "description": "Title of the section containing the picture's main information"
+  },
+  "sidebarBodyHistoryTitle": {
+    "message": "Modification history",
+    "description": "Title of the section containing the picture's modification history"
+  }
+}

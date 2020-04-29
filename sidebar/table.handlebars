@@ -1,0 +1,16 @@
+<div class="wrap-collabsible">
+    <input id="{{ id }}-collapsible" class="toggle" type="checkbox">
+    <label for="{{ id }}-collapsible" class="lbl-toggle">{{ title }}</label>
+    <div class="collapsible-content">
+        <div class="content-inner">
+            <table>
+                {{#each entries}}
+                <tr>
+                    <td class="table-key">{{ @key }}</td>
+                    <td class="table-value">{{ this }}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+</div>

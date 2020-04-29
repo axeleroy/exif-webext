@@ -1,0 +1,139 @@
+body {
+    margin: 16px;
+}
+
+.display {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+#img-thumbnail-box {
+    width: inherit;
+    min-height: 200px;
+    border: #646464 2px dashed;
+    display: flex;
+    justify-content: center;
+}
+
+.displayed {
+    min-height: unset !important;
+    border-style: solid !important;
+}
+
+#img-thumbnail {
+    width: 100%;
+    height: auto;
+    flex: 1
+}
+
+.img-url {
+    text-align: center;
+    font-family: monospace;
+}
+
+#img-thumbnail-placeholder {
+    color: #646464;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+}
+
+#img-info-panel {
+    display: none;
+}
+
+.no-data {
+    font-family: monospace;
+    text-align: center;
+}
+
+table {
+    table-layout:fixed;
+    width:100%;
+}
+
+tr {
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-key {
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.table-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scroll-x tbody {
+    display: block;
+    overflow-x: auto;
+}
+
+/* Collapsible */
+input[type='checkbox'] {
+    display: none;
+}
+
+.lbl-toggle {
+    display: block;
+
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+    color: #0b3e7c;
+}
+
+.lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height .25s ease-in-out;
+}
+
+.content-inner {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: unset;
+}
+
+.toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+

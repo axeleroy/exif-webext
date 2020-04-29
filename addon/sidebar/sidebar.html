@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <script type="application/javascript" src="l10n.js"></script>
+
+    <div id="img-thumbnail-box">
+        <img id="img-thumbnail" (load)="onImgLoad()">
+        <p id="img-thumbnail-placeholder">__MSG_sidebarBodyPlaceholderText__</p>
+    </div>
+    <div id="img-info-panel">
+        <p class="img-url">
+            <b>__MSG_sidebarBodyUrl__</b>
+            <span id="img-src"></span>
+        </p>
+
+        <hr>
+
+        <div id="table">
+            <p class="no-data">__MSG_sidebarBodyNoData__</p>
+        </div>
+    </div>
+
+    <script type="application/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "exif-webext",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "exifr": "^5.0.1",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.3.2"
+  }
+}

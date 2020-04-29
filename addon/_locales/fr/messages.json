@@ -1,0 +1,37 @@
+{
+  "extensionName": {
+    "message": "Affichage des méta-données d'images",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Une extension pour afficher les méta-données d'une image",
+    "description": "Extension description"
+  },
+  "sidebarName": {
+    "message": "Informations de l'image",
+    "description": "Sidebar name"
+  },
+  "menuItemDisplayExif": {
+    "message": "Méta-données de l'image",
+    "description": "Title of the menu item for displaying a picture's EXIF"
+  },
+  "sidebarBodyPlaceholderText": {
+    "message": "Faites un clic droit sur n'importe quelle image et sélectionnez \"Méta-données de l'image\"",
+    "description": "Placeholder text when the sidebar is open without picture displayed"
+  },
+  "sidebarBodyUrl": {
+    "message": "URL:"
+  },
+  "sidebarBodyNoData": {
+    "message": "Cette image ne contient pas de méta-données",
+    "description": "Text displayed when the picture does not have meta-data"
+  },
+  "sidebarBodyMainInfoTitle": {
+    "message": "Informations",
+    "description": "Title of the section containing the picture's main information"
+  },
+  "sidebarBodyHistoryTitle": {
+    "message": "Historique des modifications",
+    "description": "Title of the section containing the picture's modification history"
+  }
+}
