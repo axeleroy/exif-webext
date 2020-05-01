@@ -17,7 +17,7 @@ if (imgSrc) {
 thumbnailImg.addEventListener('loadend', () => {
     document.getElementById("img-thumbnail-placeholder").classList.add("hide");
     document.getElementById("img-thumbnail-box").classList.add("displayed");
-    getPicture();
+    parseExif();
 });
 
 function appendToBody(html) {
@@ -26,19 +26,11 @@ function appendToBody(html) {
     document.body.appendChild(div);
 }
 
-function getPicture() {
-    let request = new XMLHttpRequest();
-    request.addEventListener("load", parseExif);
-    request.responseType = "arraybuffer"
-    request.open("GET", imgSrc);
-    request.send();
-}
-
 function parseExif() {
     const tableElementId = "table";
     const isObject = (el) => (typeof el === "object" && el.length === undefined && el.getDate === undefined)
 
-    exifr.parse(this.response, true)
+    exifr.parse(thumbnailImg, true)
         .then(exif => {
             // First list attributes that cannot be directly displayed
             const objects = Object.entries(exif).filter(v => isObject(v[1]));
