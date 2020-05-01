@@ -1,21 +1,30 @@
 import exifr from 'exifr';
+const thumbnailTemplate = require('./thumbnail.handlebars');
+const infoTemplate = require('./info.handlebars');
 const tableTemplate = require('./table.handlebars');
 const historyTemplate = require('./history.handlebars');
+
+appendToBody(thumbnailTemplate())
 
 const imgSrc = new URLSearchParams(window.location.search).get('url');
 const thumbnailImg = document.getElementById("img-thumbnail");
 
 if (imgSrc) {
+    appendToBody(infoTemplate({ url: imgSrc }));
     thumbnailImg.setAttribute("src", imgSrc);
-    document.getElementById("img-src").innerText = imgSrc;
 }
 
 thumbnailImg.addEventListener('loadend', () => {
     document.getElementById("img-thumbnail-placeholder").classList.add("hide");
     document.getElementById("img-thumbnail-box").classList.add("displayed");
-    document.getElementById("img-info-panel").classList.add("display");
     getPicture();
 });
+
+function appendToBody(html) {
+    let div = document.createElement('div');
+    div.innerHTML = html;
+    document.body.appendChild(div);
+}
 
 function getPicture() {
     let request = new XMLHttpRequest();

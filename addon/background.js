@@ -3,7 +3,7 @@ const DISPLAY_EXIF_ID = "display-exif-menu-item";
 browser.contextMenus.create({
     id: DISPLAY_EXIF_ID,
     title: browser.i18n.getMessage("menuItemDisplayExif"),
-    contexts: ['image']
+    contexts: ["image"]
 })
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
