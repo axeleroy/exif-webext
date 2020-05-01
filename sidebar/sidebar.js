@@ -1,4 +1,4 @@
-import exifr from 'exifr';
+import exifr from '../node_modules/exifr/dist/full.legacy.umd.js';
 const thumbnailTemplate = require('./thumbnail.handlebars');
 const infoTemplate = require('./info.handlebars');
 const tableTemplate = require('./table.handlebars');

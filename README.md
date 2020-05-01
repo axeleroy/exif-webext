@@ -18,7 +18,7 @@ _(Pictures courtesy of [exif.org](http://www.exif.org/) via [ianare/exif-samples
 Because [sidebar.js](sidebar/sidebar.js) depends on [exifr](https://github.com/MikeKovarik/exifr)
 and [handlebars](https://handlebarsjs.com), Webpack is used to build part of the addon:
 
-Run `npm install` to install dependencies, run `npm build` to build.
+Run `npm install` to install dependencies, run `npm run build` to build.
 
 Then you can package the content of the [addon](addon) folder or load [manifest.json](addon/manifest.json)
 to [temporarily install the add-on](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
