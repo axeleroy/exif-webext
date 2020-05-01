@@ -4,6 +4,8 @@
 
 # Generated files
 addon/sidebar/index.js
+*.zip
+*.xpi
 
 # NPM
 node_modules

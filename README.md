@@ -13,6 +13,10 @@ Metadata can include information on the camera, its settings, the GPS location, 
 
 _(Pictures courtesy of [exif.org](http://www.exif.org/) via [ianare/exif-samples](https://github.com/ianare/exif-samples))_
 
+## Installation / Download
+
+Until the add-on passes Mozilla's verification process, you can find all releases [here](https://github.com/axeleroy/exif-webext/releases).
+
 ## Building the add-on
 
 Because [sidebar.js](sidebar/sidebar.js) depends on [exifr](https://github.com/MikeKovarik/exifr)
