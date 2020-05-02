@@ -15,7 +15,9 @@ _(Pictures courtesy of [exif.org](http://www.exif.org/) via [ianare/exif-samples
 
 ## Installation / Download
 
-Until the add-on passes Mozilla's verification process, you can find all releases [here](https://github.com/axeleroy/exif-webext/releases).
+Prefered way is through https://addons.mozilla.org/en-US/firefox/addon/display-picture-meta-data/
+
+You can also install it manually from the [releases](https://github.com/axeleroy/exif-webext/releases).
 
 ## Building the add-on
 
