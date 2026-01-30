@@ -11,6 +11,6 @@
     "handlebars-loader": "^1.7.1"
   },
   "devDependencies": {
-    "webpack": "^2.3.2"
+    "webpack": "^5.104.1"
   }
 }
